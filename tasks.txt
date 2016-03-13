@@ -1,0 +1,3 @@
+Be done by Tuesday of 15th March 
+1. DB Schema 
+2. Base files structure with Materialize as front-end template.
