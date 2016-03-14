@@ -1,0 +1,6 @@
+{
+    "db": "mongodb://localhost/clubmanager",
+    "app": {
+        "name": "ClubManager - Application to manage tecno science club"
+    }
+}
