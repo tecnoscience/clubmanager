@@ -12,6 +12,27 @@
             <p class="help-block error-text" ng-message="required">Member name is required.</p>
           </div>
         </div>
+        <div class="form-group" show-errors>
+          <label class="control-label" for="course">Course</label>
+          <input name="name" type="text" ng-model="vm.member.course" id="course" class="form-control" placeholder="Course" required>
+          <div ng-messages="vm.form.memberForm.course.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Member course is required.</p>
+          </div>
+        </div>
+        <div class="form-group" show-errors>
+          <label class="control-label" for="course">Email</label>
+          <input name="name" type="text" ng-model="vm.member.email" id="email" class="form-control" placeholder="email@host.com" required>
+          <div ng-messages="vm.form.memberForm.email.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Member email is required.</p>
+          </div>
+        </div>
+        <div class="form-group" show-errors>
+          <label class="control-label" for="course">Phone Number</label>
+          <input name="phone" type="phone" ng-model="vm.member.phone" id="phone" class="form-control" placeholder="+254..." required>
+          <div ng-messages="vm.form.memberForm.phone.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Member phone number is required.</p>
+          </div>
+        </div>
         <div class="form-group">
           <button type="submit" class="btn btn-default">{{vm.member._id ? 'Update' : 'Create'}}</button>
         </div>
